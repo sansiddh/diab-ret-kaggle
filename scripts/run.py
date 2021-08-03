@@ -74,6 +74,6 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
             best_loss = epoch_loss
             best_model_wts = deepcopy(model.state_dict())
             
-with open("best_model_wts-1.pkl", "wb") as output_file:
+with open("best_model_wts.pkl", "wb") as output_file:
     pickle.dump(best_model_wts, output_file)
 print('Finished Training')
